@@ -41,10 +41,10 @@ const Demo = () => {
 
                 <input
                     type='url'
-                    placeholder='Enter a URL'
+                    placeholder='Please enter an article URL to summarize.'
                     value={article.url}
-                    onChange={(e) => setarticle({
-                        article, url: e.target.value})}
+                    onChange={(e) => setArticle({
+                        ...article, url: e.target.value})}
                     required
                     className='url_input peer'
                 />
